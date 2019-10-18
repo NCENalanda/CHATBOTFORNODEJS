@@ -21,11 +21,11 @@ app.use(express.static(__dirname + '/public'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(passport.initialize());
-app.use(session({
-    secret: 'keyboard cat',
-    resave: false,
-    saveUninitialized: true
-}));
+//app.use(session({
+//   secret: 'keyboard cat',
+ //   resave: false,
+ //   saveUninitialized: true
+//}));
 
 // start server
 const server = app.listen(app.get('port'), function() {
